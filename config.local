@@ -1,0 +1,19 @@
+var config = {};
+config.emailSettings = {};
+config.crypto = {};
+config.ionic = {};
+config.emailSettings.from || "winston logger",
+config.emailSettings.email = 'email';
+config.emailSettings.port = 'port';
+config.emailSettings.host = 'hos';
+config.emailSettings.ssl  = 'ssl';
+config.crypto.algorithm = 'hello';
+config.crypto.password = 'password';
+config.photoCropFactor= 'pgoo';
+config.dbSettings= 'dbv';
+config.ionic.appId= 'appid';
+config.withoutPolicy= 'polic';
+config.geoNearLimit= 'limi';
+config.chatPageSize= 'cha';
+module.exports = config;
+
