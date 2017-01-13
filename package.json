@@ -19,6 +19,10 @@
     "vksdk": ">=5.1.0",
     "winston": ">=0.9.0"
   },
+  "scripts": {
+  "start": "node app.js"
+},
+
   "repository": {
     "type": "git",
     "url": "https://bitbucket.org/kostya_danovsky/pinder"
