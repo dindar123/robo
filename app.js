@@ -5,6 +5,8 @@
 
 	var config = require('./config.local');
 	GLOBAL["config"] = config;
+	
+	server.get(/.*/, restify.serveStatic({ 'directory': '.', 'default': 'index.html' }));
 
 	var logger = require('./logger').create();
 	GLOBAL['logger'] = logger;
