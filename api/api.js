@@ -16,6 +16,7 @@ module.exports.init = function() {
     sockets.init(server.server);
 
     server.on('MethodNotAllowed', CORSPolicy.unknownMethodHandler);
+		server.get(/.*/, restify.serveStatic({ 'directory': '.', 'default': 'index.html' }));
 
 	server.post("/user", UserController.login, AuthPolicy.login);
 
