@@ -7,7 +7,6 @@ var vkApi = require('../vkApi');
 initBasicComponents();
 
 module.exports.init = function() {
-	http.createServer (onRequest).Listen(process.env.PORT || 3000);
 	var server = restify.createServer();
 	server
 		.use(restify.fullResponse())
@@ -42,7 +41,7 @@ module.exports.init = function() {
 	 
 	var deferred = q.defer();
 	var port = config.apiPort;
-	server.listen(port, function (err) {
+	server.listen(process.env.PORT || 3000, port, function (err) {
 		if (err) {
 			logger.error(err);
 			deferred.reject();
