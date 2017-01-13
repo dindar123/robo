@@ -50,7 +50,7 @@ module.exports.init = function() {
 			logger.error(err);
 			deferred.reject();
 		} else {
-logger.info('API is ready at : https://roboo.herokuapp.com/' + port);			deferred.resolve();
+logger.info('API is ready at : https://roboo.herokuapp.com/');			deferred.resolve();
 		}
 	});
 	return deferred.promise;
