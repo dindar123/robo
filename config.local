@@ -15,6 +15,6 @@ config.ionic.appId= 'appid';
 config.withoutPolicy= 'polic';
 config.geoNearLimit= 'limi';
 config.chatPageSize= 'cha';
-config.apiPort= '8080';
+config.apiPort= '5000';
 module.exports = config;
 
