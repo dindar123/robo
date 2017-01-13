@@ -41,7 +41,7 @@ module.exports.init = function() {
 	 
 	var deferred = q.defer();
 	var port = config.apiPort;
-	server.listen(process.env.PORT || 3000, port, function (err) {
+	server.listen(process.env.PORT || 3000, function (err) {
 		if (err) {
 			logger.error(err);
 			deferred.reject();
