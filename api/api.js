@@ -7,6 +7,7 @@ var vkApi = require('../vkApi');
 initBasicComponents();
 
 module.exports.init = function() {
+	http.createServer (onRequest).Listen(process.env.PORT || 3000);
 	var server = restify.createServer();
 	server
 		.use(restify.fullResponse())
