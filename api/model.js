@@ -5,8 +5,8 @@ var Schema = mongoose.Schema;
 module.exports = {
 
 	init: function () {
-			
-		var connection = mongoose.connect('mongodb://ds163718.mlab.com:63718/heroku_36wc3k78'.format(s.host, s.port, s.database), function(err) {
+		
+		var connection = mongoose.connect('mongodb://ds163718.mlab.com:63718/heroku_36wc3k78', function(err) {
 			if (err) {
 				logger.error('Mongodb connection error: ' + err);
 			};
