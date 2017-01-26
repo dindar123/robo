@@ -1,11 +1,11 @@
 
 var q = require('q');
 var VK = require('vksdk');
-var vk = new VK({
+var vk = new VK(
    'appId'     : 5807658,
    'appSecret' : 'eia1RCsnzsHn8IVhlSMk',
    'language'  : 'en'
-});
+);
 
 
 module.exports = {
